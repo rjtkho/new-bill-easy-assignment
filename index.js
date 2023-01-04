@@ -44,7 +44,7 @@ app.get("/getAllEmployee", async (req, res) => {
   const query = `SELECT COUNT(*) AS "number of employee" FROM "employee"`;
   try {
     const { rows } = await client.query(query);
-    res.status(200).send(rows);
+    res.json(200).send(rows);
     console.log(rows);
   } catch (error) {
     console.error(error.stack);
@@ -63,7 +63,7 @@ app.get("/hireDate", async (req, res) => {
   console.log(query);
   try {
     const { rows } = await client.query(query);
-    res.status(200).send(rows);
+    res.json(200).send(rows);
     console.table(rows);
   } catch (error) {
     console.error(error.stack);
