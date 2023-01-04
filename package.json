@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"./node_modules/.bin/netlify-lamba server src",
-    "build": "./node_modules/.bin/netlify-lamba build src"
+    "test": "echo \"Error: no test specified\" && exit 1"
+   
+    
   },
   "author": "",
   "license": "ISC",
